@@ -1,6 +1,11 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-12">
+      <%= form_for :search_best_buy, url: search_path, method: :get do |f| %>
+        <%= f.label :product %>
+        <%= f.text_field :product %>
+        <%= f.submit "Search" %>
+      <% end %>
       <h1><%= @items.count %> Items</h1>
     </div>
   </div>
@@ -15,4 +20,3 @@
     </div>
   <% end %>
 </div>
-
