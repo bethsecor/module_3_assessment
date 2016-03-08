@@ -12,13 +12,29 @@ gem "faker"
 gem "haml-rails"
 gem "therubyracer"
 gem "less-rails-bootstrap"
-gem "minitest-rails"
+# gem "minitest-rails"
+
+gem 'responders'
+gem 'active_model_serializers', github: 'rails-api/active_model_serializers'
+gem 'figaro'
+gem 'faraday'
 
 group :development do
   gem "spring"
 end
 
 group :development, :test do
-  gem "minitest-rails-capybara"
+  # gem "minitest-rails-capybara"
   gem "pry", :require => "pry"
+  gem 'rspec-rails'
+  gem 'factory_girl'
+end
+
+group :test do
+  gem 'webmock'
+  gem 'vcr'
+  gem 'capybara'
+  gem 'launchy'
+  gem 'database_cleaner'
+  gem 'mocha'
 end
