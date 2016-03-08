@@ -51,4 +51,22 @@ RSpec.describe Api::V1::ItemsController, type: :controller do
 
     expect(response.status).to eq 204
   end
+
+  it "creates an item and receives a 201 response" do
+    post :create, format: :json,
+                  item: { name: "Donut",
+                  description: "Yummy!",
+                  image_url: "https://www.dunkindonuts.com/content/dunkindonuts/en/menu/food/bakery/donuts/donuts/_jcr_content/block/image.img.png/1415193587324.png"}
+
+
+    expect(response.status).to eq 201
+
+    api_item_1 = JSON.parse(response.body)
+
+    expect(api_item_1['name']).to eq "Donut"
+    expect(api_item_1['description']).to eq "Yummy!"
+    expect(api_item_1['image_url']).to eq "https://www.dunkindonuts.com/content/dunkindonuts/en/menu/food/bakery/donuts/donuts/_jcr_content/block/image.img.png/1415193587324.png"
+    expect(api_item_1['created_at']).to eq nil
+    expect(api_item_1['updated_at']).to eq nil
+  end
 end
