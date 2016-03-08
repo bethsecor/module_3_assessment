@@ -1,0 +1,195 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.bestbuy.com/v1/products(manufacturer=sennheiser&longDescription=headphones*&longDescription=white*)?apiKey=v5wgz5wump7sjqjuh4x4c73p&format=json&pageSize=15&show=sku,name,customerReviewAverage,shortDescription,salePrice,image
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Mashery-Responder:
+      - prod-j-worker-lax-02.mashery.com
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '3238'
+      Server:
+      - thin 1.6.1 codename Death Proof
+      Date:
+      - Tue, 08 Mar 2016 18:39:54 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "from": 1,
+          "to": 6,
+          "total": 6,
+          "currentPage": 1,
+          "totalPages": 1,
+          "queryTime": "0.007",
+          "totalTime": "0.022",
+          "partial": false,
+          "canonicalUrl": "/v1/products(manufacturer=\"sennheiser\"&longDescription=\"headphones*\"&longDescription=\"white*\")?show=sku,name,customerReviewAverage,shortDescription,salePrice,image&format=json&apiKey=v5wgz5wump7sjqjuh4x4c73p",
+          "products": [
+            {
+              "sku": 9068191,
+              "name": "Sennheiser - CX 1.00 Earbud Headphones - White",
+              "customerReviewAverage": null,
+              "shortDescription": "SENNHEISER CX 1.00 Earbud Headphones: Noise-blocking design; dynamic transducer principle; ultrasmall design; 3.5mm connector; 3.9' cable; includes 4 sizes of ear adapters",
+              "salePrice": 44.95,
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/9068/9068191_sa.jpg"
+            },
+            {
+              "sku": 9068155,
+              "name": "Sennheiser - CX 2.00G Earbud Headphones - White",
+              "customerReviewAverage": "1.0",
+              "shortDescription": "SENNHEISER CX 2.00G Earbud Headphones: Dynamic transducers; 3-button in-line remote with integrated microphone; 4 ear adapter sizes; 3.9' cable; 3.5mm angled plug",
+              "salePrice": 54.95,
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/9068/9068155_sa.jpg"
+            },
+            {
+              "sku": 9068182,
+              "name": "Sennheiser - CX 2.00i Earbud Headphones - White",
+              "customerReviewAverage": null,
+              "shortDescription": "SENNHEISER CX 2.00i Earbud Headphones: Dynamic transducers; 3-button in-line remote with integrated microphone; 4 ear adapter sizes; 3.9' cable; 3.5mm angled plug",
+              "salePrice": 54.95,
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/9068/9068182_sa.jpg"
+            },
+            {
+              "sku": 9068004,
+              "name": "Sennheiser - CX 3.00 Earbud Headphones - White",
+              "customerReviewAverage": "3.5",
+              "shortDescription": "SENNHEISER CX 3.00 Earbud Headphones: Dynamic transducers; 4 ear adapter sizes; 3.9' elliptical, tangle-free cable; 3.5mm angled plug; includes a carrying case",
+              "salePrice": 45.99,
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/9068/9068004_sa.jpg"
+            },
+            {
+              "sku": 9068013,
+              "name": "Sennheiser - CX 5.00G Earbud Headphones - White",
+              "customerReviewAverage": "2.0",
+              "shortDescription": "SENNHEISER CX 5.00G Earbud Headphones: Dynamic transducers; 3-button in-line remote with integrated omnidirectional microphone; ergonomic, angled design; 4 ear adapter sizes; 3.9' elliptical, tangle-free cable; 3.5mm angled plug; includes a carrying case",
+              "salePrice": 89.95,
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/9068/9068013_sa.jpg"
+            },
+            {
+              "sku": 9068128,
+              "name": "Sennheiser - CX 5.00i Earbud Headphones - White",
+              "customerReviewAverage": "2.0",
+              "shortDescription": "SENNHEISER CX 5.00i Earbud Headphones: Dynamic transducers; 3-button in-line remote with integrated omnidirectional microphone; ergonomic, angled design; 4 ear adapter sizes; 3.9' elliptical, tangle-free cable; 3.5mm angled plug",
+              "salePrice": 89.95,
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/9068/9068128_sa.jpg"
+            }
+          ]
+        }
+    http_version: 
+  recorded_at: Tue, 08 Mar 2016 18:39:55 GMT
+- request:
+    method: get
+    uri: https://api.bestbuy.com/v1/products(manufacturer=sennheiser&longDescription=headphones*&longDescription=white*)?apiKey=v5wgz5wump7sjqjuh4x4c73p&format=json&pageSize=15&show=sku,name,customerReviewAverage,shortDescription,salePrice,image
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Mashery-Responder:
+      - prod-j-worker-lax-03.mashery.com
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '3238'
+      Server:
+      - thin 1.6.1 codename Death Proof
+      Date:
+      - Tue, 08 Mar 2016 18:39:55 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "from": 1,
+          "to": 6,
+          "total": 6,
+          "currentPage": 1,
+          "totalPages": 1,
+          "queryTime": "0.007",
+          "totalTime": "0.022",
+          "partial": false,
+          "canonicalUrl": "/v1/products(manufacturer=\"sennheiser\"&longDescription=\"headphones*\"&longDescription=\"white*\")?show=sku,name,customerReviewAverage,shortDescription,salePrice,image&format=json&apiKey=v5wgz5wump7sjqjuh4x4c73p",
+          "products": [
+            {
+              "sku": 9068191,
+              "name": "Sennheiser - CX 1.00 Earbud Headphones - White",
+              "customerReviewAverage": null,
+              "shortDescription": "SENNHEISER CX 1.00 Earbud Headphones: Noise-blocking design; dynamic transducer principle; ultrasmall design; 3.5mm connector; 3.9' cable; includes 4 sizes of ear adapters",
+              "salePrice": 44.95,
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/9068/9068191_sa.jpg"
+            },
+            {
+              "sku": 9068155,
+              "name": "Sennheiser - CX 2.00G Earbud Headphones - White",
+              "customerReviewAverage": "1.0",
+              "shortDescription": "SENNHEISER CX 2.00G Earbud Headphones: Dynamic transducers; 3-button in-line remote with integrated microphone; 4 ear adapter sizes; 3.9' cable; 3.5mm angled plug",
+              "salePrice": 54.95,
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/9068/9068155_sa.jpg"
+            },
+            {
+              "sku": 9068182,
+              "name": "Sennheiser - CX 2.00i Earbud Headphones - White",
+              "customerReviewAverage": null,
+              "shortDescription": "SENNHEISER CX 2.00i Earbud Headphones: Dynamic transducers; 3-button in-line remote with integrated microphone; 4 ear adapter sizes; 3.9' cable; 3.5mm angled plug",
+              "salePrice": 54.95,
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/9068/9068182_sa.jpg"
+            },
+            {
+              "sku": 9068004,
+              "name": "Sennheiser - CX 3.00 Earbud Headphones - White",
+              "customerReviewAverage": "3.5",
+              "shortDescription": "SENNHEISER CX 3.00 Earbud Headphones: Dynamic transducers; 4 ear adapter sizes; 3.9' elliptical, tangle-free cable; 3.5mm angled plug; includes a carrying case",
+              "salePrice": 45.99,
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/9068/9068004_sa.jpg"
+            },
+            {
+              "sku": 9068013,
+              "name": "Sennheiser - CX 5.00G Earbud Headphones - White",
+              "customerReviewAverage": "2.0",
+              "shortDescription": "SENNHEISER CX 5.00G Earbud Headphones: Dynamic transducers; 3-button in-line remote with integrated omnidirectional microphone; ergonomic, angled design; 4 ear adapter sizes; 3.9' elliptical, tangle-free cable; 3.5mm angled plug; includes a carrying case",
+              "salePrice": 89.95,
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/9068/9068013_sa.jpg"
+            },
+            {
+              "sku": 9068128,
+              "name": "Sennheiser - CX 5.00i Earbud Headphones - White",
+              "customerReviewAverage": "2.0",
+              "shortDescription": "SENNHEISER CX 5.00i Earbud Headphones: Dynamic transducers; 3-button in-line remote with integrated omnidirectional microphone; ergonomic, angled design; 4 ear adapter sizes; 3.9' elliptical, tangle-free cable; 3.5mm angled plug",
+              "salePrice": 89.95,
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/9068/9068128_sa.jpg"
+            }
+          ]
+        }
+    http_version: 
+  recorded_at: Tue, 08 Mar 2016 18:39:55 GMT
+recorded_with: VCR 3.0.1

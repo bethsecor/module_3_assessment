@@ -9,7 +9,8 @@ class BestBuyService
 
   def products(manufacturer, attributes=nil)
     if attributes
-      parse(connection.get("products(manufacturer=#{manufacturer})",
+      filter = attributes.split(" ").map { |a| "longDescription=#{a}*" }.join("&")
+      parse(connection.get("products(manufacturer=#{manufacturer}&#{filter})",
                           {show: "sku,name,customerReviewAverage,shortDescription,salePrice,image",
                            pageSize: 15}))[:products]
     else
@@ -18,7 +19,6 @@ class BestBuyService
                            pageSize: 15}))[:products]
     end
   end
-  # https://api.bestbuy.com/v1/products(manufacturer=sennheiser&longDescription=headphones*&longDescription=white*)?format=json&show=sku,name,salePrice&apiKey=v5wgz5wump7sjqjuh4x4c73p
 
   private
 
