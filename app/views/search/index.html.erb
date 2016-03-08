@@ -1,4 +1,3 @@
-
 <div class="container">
   <h4><%= @best_buy_items.count %> Items</h4>
   <% @best_buy_items.each do |item| %>
@@ -13,5 +12,5 @@
     </ul>
   </div>
   <% end %>
-  <%= "No results." if @best_buy_items.empty? %>
+  <%= "No results. SORRY!" if @best_buy_items.empty? %>
 </div>

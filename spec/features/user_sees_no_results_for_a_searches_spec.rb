@@ -11,7 +11,7 @@ RSpec.feature "UserSeesNoResultsForASearches", type: :feature do
       expect(current_path).to eq search_path
       expect(page).to have_content("0 Items")
 
-      expect(page).to have_content("No results.")
+      expect(page).to have_content("No results. SORRY!")
     end
   end
 end
