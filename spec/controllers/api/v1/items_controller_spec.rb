@@ -38,7 +38,6 @@ RSpec.describe Api::V1::ItemsController, type: :controller do
     api_item_1 = JSON.parse(response.body)
 
     expect(api_item_1['name']).to eq item_1.name
-    refute(api_item_1['name']).to eq item_2.name
     expect(api_item_1['description']).to eq item_1.description
     expect(api_item_1['image_url']).to eq item_1.image_url
     expect(api_item_1['created_at']).to eq nil
