@@ -43,4 +43,12 @@ RSpec.describe Api::V1::ItemsController, type: :controller do
     expect(api_item_1['created_at']).to eq nil
     expect(api_item_1['updated_at']).to eq nil
   end
+
+  it "deletes an item and receives a 204 response" do
+    item_1, item_2, item_3 = create_list(:item, 3)
+
+    delete :destroy, id: item_1.id, format: :json
+
+    expect(response.status).to eq 204
+  end
 end
