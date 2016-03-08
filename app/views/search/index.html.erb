@@ -4,7 +4,7 @@
   <% @best_buy_items.each do |item| %>
   <div id="best-buy-item-<%=item.sku%>">
     <h5><%= item.name %></h5>
-    <%= image_tag item.image, height: '100' %>
+    <%= image_tag item.image, alt: item.image, height: '100' %>
     <ul>
       <li>SKU: <%= item.sku %></li>
       <li>Description: <%= item.shortDescription %></li>
