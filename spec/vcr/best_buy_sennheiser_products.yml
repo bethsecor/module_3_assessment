@@ -1,0 +1,339 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.bestbuy.com/v1/products(manufacturer=sennheiser)?apiKey=v5wgz5wump7sjqjuh4x4c73p&format=json&pageSize=15&show=sku,name,customerReviewAverage,shortDescription,salePrice,image
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Mashery-Responder:
+      - prod-j-worker-lax-04.mashery.com
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '7105'
+      Server:
+      - thin 1.6.1 codename Death Proof
+      Date:
+      - Tue, 08 Mar 2016 17:36:41 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "from": 1,
+          "to": 15,
+          "total": 158,
+          "currentPage": 1,
+          "totalPages": 11,
+          "queryTime": "0.005",
+          "totalTime": "0.157",
+          "partial": false,
+          "canonicalUrl": "/v1/products(manufacturer=\"sennheiser\")?show=sku,name,customerReviewAverage,shortDescription,salePrice,image&format=json&apiKey=v5wgz5wump7sjqjuh4x4c73p",
+          "products": [
+            {
+              "sku": 2602352,
+              "name": "Sennheiser - Active Noise-Canceling Headphones - Black",
+              "customerReviewAverage": "2.7",
+              "shortDescription": "From our expanded online assortment; TalkThrough function; NoiseGard Digital noise cancellation; 10mm drivers",
+              "salePrice": 229.99,
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/2602/2602352_sa.jpg"
+            },
+            {
+              "sku": 1700513,
+              "name": "Sennheiser - Audiophile Over-the-Ear Headphones - Titan",
+              "customerReviewAverage": "4.5",
+              "shortDescription": "Eargonomic Acoustic Refinement technology; Duofol diaphragm technology; neodymium ferrous magnet; aluminum voice coils",
+              "salePrice": 179.98,
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/1700/1700513_sa.jpg"
+            },
+            {
+              "sku": 9636974,
+              "name": "Sennheiser - Binaural Headphone - Black",
+              "customerReviewAverage": "4.4",
+              "shortDescription": "Wired Connectivity - Surround - Over-the-head - Black",
+              "salePrice": 69.99,
+              "image": "http://img.bbystatic.com/BestBuy_US/images/products/9636/9636974_rc.jpg"
+            },
+            {
+              "sku": 9637018,
+              "name": "Sennheiser - Binaural Headphone - Black",
+              "customerReviewAverage": "4.5",
+              "shortDescription": "Stereo - Black - Wireless - RF - 60 ft - 32 Ohm - 18 Hz 21 kHz - Over-the-head - Binaural - Circumaural",
+              "salePrice": 199.99,
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/9637/9637018_sa.jpg"
+            },
+            {
+              "sku": 9678429,
+              "name": "Sennheiser - Camera-Mount Wireless Microphone System - Black",
+              "customerReviewAverage": null,
+              "shortDescription": "SENNHEISER Camera-Mount Wireless Microphone System: Invisible clip-on microphone; sturdy metal housing; automatic frequency management; easy-to-read illuminated display; 4-level battery indicator; 626-668MHz frequency range",
+              "salePrice": 629.95,
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/9678/9678429_sa.jpg"
+            },
+            {
+              "sku": 9678447,
+              "name": "Sennheiser - Camera-Mount Wireless Microphone System - Black",
+              "customerReviewAverage": null,
+              "shortDescription": "SENNHEISER Camera-Mount Wireless Microphone System: Invisible clip-on microphone; sturdy metal housing; automatic frequency management; easy-to-read illuminated display; 4-level battery indicator; 566-608MHz frequency range",
+              "salePrice": 629.95,
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/9678/9678447_sa.jpg"
+            },
+            {
+              "sku": 6131454,
+              "name": "Sennheiser - CH 650 S 10' Balanced Headphone Cable - Black",
+              "customerReviewAverage": null,
+              "shortDescription": "SENNHEISER CH 650 S 10' Balanced Headphone Cable: Compatible with Sennheiser headphone amplifiers; oxygen-free copper cables; gold-plated contacts; 4pole XLR with 2 mini plugs",
+              "salePrice": 239.99,
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/6131/6131454_sa.jpg"
+            },
+            {
+              "sku": 6131463,
+              "name": "Sennheiser - CH 700 S 10' Balanced Headphone Cable - Black",
+              "customerReviewAverage": null,
+              "shortDescription": "SENNHEISER CH 700 S 10' Balanced Headphone Cable: Compatible with Sennheiser headphones and headphone amplifiers; oxygen-free copper cables with silver coating; gold-plated contacts; 4pole XLR with two 2.5mm jacks",
+              "salePrice": 319.99,
+              "image": "http://img.bbystatic.com/BestBuy_US/images/products/6131/6131463_rc.jpg"
+            },
+            {
+              "sku": 6131445,
+              "name": "Sennheiser - CH 800 S 10' Balanced Headphone Cable - Black",
+              "customerReviewAverage": null,
+              "shortDescription": "SENNHEISER CH 800 S 10' Balanced Headphone Cable: Compatible with Sennheiser headphones and headphone amplifiers; oxygen-free copper cables with silver coating; gold-plated contacts; 4pole XLR with 2 ODU connectors",
+              "salePrice": 379.99,
+              "image": "http://img.bbystatic.com/BestBuy_US/images/products/6131/6131445_rc.jpg"
+            },
+            {
+              "sku": 9678438,
+              "name": "Sennheiser - Connection Cable for Sennheiser MKE 600 Microphone",
+              "customerReviewAverage": null,
+              "shortDescription": "SENNHEISER Connection Cable for Sennheiser MKE 600 Microphone: Connects Sennheiser MKE 600 microphone to most smartphones; XLR-3 connector-to-3.5mm jack plug; coiled cable",
+              "salePrice": 19.95,
+              "image": "http://img.bbystatic.com/BestBuy_US/images/products/9678/9678438_sa.jpg"
+            },
+            {
+              "sku": 9068146,
+              "name": "Sennheiser - CX 1.00 Earbud Headphones - Black",
+              "customerReviewAverage": "5.0",
+              "shortDescription": "SENNHEISER CX 1.00 Earbud Headphones: Noise-blocking design; dynamic transducer principle; ultrasmall design; 3.5mm connector; 3.9' cable; includes 4 sizes of ear adapters",
+              "salePrice": 44.95,
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/9068/9068146_sa.jpg"
+            },
+            {
+              "sku": 9068191,
+              "name": "Sennheiser - CX 1.00 Earbud Headphones - White",
+              "customerReviewAverage": null,
+              "shortDescription": "SENNHEISER CX 1.00 Earbud Headphones: Noise-blocking design; dynamic transducer principle; ultrasmall design; 3.5mm connector; 3.9' cable; includes 4 sizes of ear adapters",
+              "salePrice": 44.95,
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/9068/9068191_sa.jpg"
+            },
+            {
+              "sku": 9068164,
+              "name": "Sennheiser - CX 2.00G Earbud Headphones - Black",
+              "customerReviewAverage": "4.0",
+              "shortDescription": "SENNHEISER CX 2.00G Earbud Headphones: Dynamic transducers; 3-button in-line remote with integrated microphone; 4 ear adapter sizes; 3.9' cable; 3.5mm angled plug",
+              "salePrice": 54.95,
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/9068/9068164_sa.jpg"
+            },
+            {
+              "sku": 9068155,
+              "name": "Sennheiser - CX 2.00G Earbud Headphones - White",
+              "customerReviewAverage": "1.0",
+              "shortDescription": "SENNHEISER CX 2.00G Earbud Headphones: Dynamic transducers; 3-button in-line remote with integrated microphone; 4 ear adapter sizes; 3.9' cable; 3.5mm angled plug",
+              "salePrice": 54.95,
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/9068/9068155_sa.jpg"
+            },
+            {
+              "sku": 9068031,
+              "name": "Sennheiser - CX 2.00i Earbud Headphones - Black",
+              "customerReviewAverage": null,
+              "shortDescription": "SENNHEISER CX 2.00i Earbud Headphones: Dynamic transducers; 3-button in-line remote with integrated microphone; 4 ear adapter sizes; 3.9' cable; 3.5mm angled plug",
+              "salePrice": 54.95,
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/9068/9068031_sa.jpg"
+            }
+          ]
+        }
+    http_version: 
+  recorded_at: Tue, 08 Mar 2016 17:36:44 GMT
+- request:
+    method: get
+    uri: https://api.bestbuy.com/v1/products(manufacturer=sennheiser)?apiKey=v5wgz5wump7sjqjuh4x4c73p&format=json&pageSize=15&show=sku,name,customerReviewAverage,shortDescription,salePrice,image
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Mashery-Responder:
+      - prod-j-worker-lax-04.mashery.com
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '7105'
+      Server:
+      - thin 1.6.1 codename Death Proof
+      Date:
+      - Tue, 08 Mar 2016 17:37:15 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "from": 1,
+          "to": 15,
+          "total": 158,
+          "currentPage": 1,
+          "totalPages": 11,
+          "queryTime": "0.005",
+          "totalTime": "0.157",
+          "partial": false,
+          "canonicalUrl": "/v1/products(manufacturer=\"sennheiser\")?show=sku,name,customerReviewAverage,shortDescription,salePrice,image&format=json&apiKey=v5wgz5wump7sjqjuh4x4c73p",
+          "products": [
+            {
+              "sku": 2602352,
+              "name": "Sennheiser - Active Noise-Canceling Headphones - Black",
+              "customerReviewAverage": "2.7",
+              "shortDescription": "From our expanded online assortment; TalkThrough function; NoiseGard Digital noise cancellation; 10mm drivers",
+              "salePrice": 229.99,
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/2602/2602352_sa.jpg"
+            },
+            {
+              "sku": 1700513,
+              "name": "Sennheiser - Audiophile Over-the-Ear Headphones - Titan",
+              "customerReviewAverage": "4.5",
+              "shortDescription": "Eargonomic Acoustic Refinement technology; Duofol diaphragm technology; neodymium ferrous magnet; aluminum voice coils",
+              "salePrice": 179.98,
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/1700/1700513_sa.jpg"
+            },
+            {
+              "sku": 9636974,
+              "name": "Sennheiser - Binaural Headphone - Black",
+              "customerReviewAverage": "4.4",
+              "shortDescription": "Wired Connectivity - Surround - Over-the-head - Black",
+              "salePrice": 69.99,
+              "image": "http://img.bbystatic.com/BestBuy_US/images/products/9636/9636974_rc.jpg"
+            },
+            {
+              "sku": 9637018,
+              "name": "Sennheiser - Binaural Headphone - Black",
+              "customerReviewAverage": "4.5",
+              "shortDescription": "Stereo - Black - Wireless - RF - 60 ft - 32 Ohm - 18 Hz 21 kHz - Over-the-head - Binaural - Circumaural",
+              "salePrice": 199.99,
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/9637/9637018_sa.jpg"
+            },
+            {
+              "sku": 9678429,
+              "name": "Sennheiser - Camera-Mount Wireless Microphone System - Black",
+              "customerReviewAverage": null,
+              "shortDescription": "SENNHEISER Camera-Mount Wireless Microphone System: Invisible clip-on microphone; sturdy metal housing; automatic frequency management; easy-to-read illuminated display; 4-level battery indicator; 626-668MHz frequency range",
+              "salePrice": 629.95,
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/9678/9678429_sa.jpg"
+            },
+            {
+              "sku": 9678447,
+              "name": "Sennheiser - Camera-Mount Wireless Microphone System - Black",
+              "customerReviewAverage": null,
+              "shortDescription": "SENNHEISER Camera-Mount Wireless Microphone System: Invisible clip-on microphone; sturdy metal housing; automatic frequency management; easy-to-read illuminated display; 4-level battery indicator; 566-608MHz frequency range",
+              "salePrice": 629.95,
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/9678/9678447_sa.jpg"
+            },
+            {
+              "sku": 6131454,
+              "name": "Sennheiser - CH 650 S 10' Balanced Headphone Cable - Black",
+              "customerReviewAverage": null,
+              "shortDescription": "SENNHEISER CH 650 S 10' Balanced Headphone Cable: Compatible with Sennheiser headphone amplifiers; oxygen-free copper cables; gold-plated contacts; 4pole XLR with 2 mini plugs",
+              "salePrice": 239.99,
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/6131/6131454_sa.jpg"
+            },
+            {
+              "sku": 6131463,
+              "name": "Sennheiser - CH 700 S 10' Balanced Headphone Cable - Black",
+              "customerReviewAverage": null,
+              "shortDescription": "SENNHEISER CH 700 S 10' Balanced Headphone Cable: Compatible with Sennheiser headphones and headphone amplifiers; oxygen-free copper cables with silver coating; gold-plated contacts; 4pole XLR with two 2.5mm jacks",
+              "salePrice": 319.99,
+              "image": "http://img.bbystatic.com/BestBuy_US/images/products/6131/6131463_rc.jpg"
+            },
+            {
+              "sku": 6131445,
+              "name": "Sennheiser - CH 800 S 10' Balanced Headphone Cable - Black",
+              "customerReviewAverage": null,
+              "shortDescription": "SENNHEISER CH 800 S 10' Balanced Headphone Cable: Compatible with Sennheiser headphones and headphone amplifiers; oxygen-free copper cables with silver coating; gold-plated contacts; 4pole XLR with 2 ODU connectors",
+              "salePrice": 379.99,
+              "image": "http://img.bbystatic.com/BestBuy_US/images/products/6131/6131445_rc.jpg"
+            },
+            {
+              "sku": 9678438,
+              "name": "Sennheiser - Connection Cable for Sennheiser MKE 600 Microphone",
+              "customerReviewAverage": null,
+              "shortDescription": "SENNHEISER Connection Cable for Sennheiser MKE 600 Microphone: Connects Sennheiser MKE 600 microphone to most smartphones; XLR-3 connector-to-3.5mm jack plug; coiled cable",
+              "salePrice": 19.95,
+              "image": "http://img.bbystatic.com/BestBuy_US/images/products/9678/9678438_sa.jpg"
+            },
+            {
+              "sku": 9068146,
+              "name": "Sennheiser - CX 1.00 Earbud Headphones - Black",
+              "customerReviewAverage": "5.0",
+              "shortDescription": "SENNHEISER CX 1.00 Earbud Headphones: Noise-blocking design; dynamic transducer principle; ultrasmall design; 3.5mm connector; 3.9' cable; includes 4 sizes of ear adapters",
+              "salePrice": 44.95,
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/9068/9068146_sa.jpg"
+            },
+            {
+              "sku": 9068191,
+              "name": "Sennheiser - CX 1.00 Earbud Headphones - White",
+              "customerReviewAverage": null,
+              "shortDescription": "SENNHEISER CX 1.00 Earbud Headphones: Noise-blocking design; dynamic transducer principle; ultrasmall design; 3.5mm connector; 3.9' cable; includes 4 sizes of ear adapters",
+              "salePrice": 44.95,
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/9068/9068191_sa.jpg"
+            },
+            {
+              "sku": 9068164,
+              "name": "Sennheiser - CX 2.00G Earbud Headphones - Black",
+              "customerReviewAverage": "4.0",
+              "shortDescription": "SENNHEISER CX 2.00G Earbud Headphones: Dynamic transducers; 3-button in-line remote with integrated microphone; 4 ear adapter sizes; 3.9' cable; 3.5mm angled plug",
+              "salePrice": 54.95,
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/9068/9068164_sa.jpg"
+            },
+            {
+              "sku": 9068155,
+              "name": "Sennheiser - CX 2.00G Earbud Headphones - White",
+              "customerReviewAverage": "1.0",
+              "shortDescription": "SENNHEISER CX 2.00G Earbud Headphones: Dynamic transducers; 3-button in-line remote with integrated microphone; 4 ear adapter sizes; 3.9' cable; 3.5mm angled plug",
+              "salePrice": 54.95,
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/9068/9068155_sa.jpg"
+            },
+            {
+              "sku": 9068031,
+              "name": "Sennheiser - CX 2.00i Earbud Headphones - Black",
+              "customerReviewAverage": null,
+              "shortDescription": "SENNHEISER CX 2.00i Earbud Headphones: Dynamic transducers; 3-button in-line remote with integrated microphone; 4 ear adapter sizes; 3.9' cable; 3.5mm angled plug",
+              "salePrice": 54.95,
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/9068/9068031_sa.jpg"
+            }
+          ]
+        }
+    http_version: 
+  recorded_at: Tue, 08 Mar 2016 17:37:17 GMT
+recorded_with: VCR 3.0.1

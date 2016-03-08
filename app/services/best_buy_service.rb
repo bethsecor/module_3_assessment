@@ -8,9 +8,9 @@ class BestBuyService
   end
 
   def products(manufacturer)
-    # https://api.bestbuy.com/v1/products(manufacturer=canon&salePrice<1000)?format=json&show=sku,name,salePrice&apiKey=YourAPIKey'
     parse(connection.get("products(manufacturer=#{manufacturer})",
-                        {show: "sku,name,customerReviewAverage,shortDescription,salePrice,image"}))[:products]
+                        {show: "sku,name,customerReviewAverage,shortDescription,salePrice,image",
+                         pageSize: 15}))[:products]
   end
 
   private
