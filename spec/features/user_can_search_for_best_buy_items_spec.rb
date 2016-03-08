@@ -10,7 +10,7 @@ RSpec.feature "UserCanSearchForBestBuyItems", type: :feature do
 
       expect(current_path).to eq search_path
       expect(page).to have_content("15 Items")
-
+      save_and_open_page
       items = BestBuyItems.find('sennheiser')
 
       items.each do |item|
@@ -20,7 +20,7 @@ RSpec.feature "UserCanSearchForBestBuyItems", type: :feature do
           expect(page).to have_content item.shortDescription
           expect(page).to have_content item.customerReviewAverage
           expect(page).to have_content item.salePrice
-          expect(page).to have_css ["img[src*='#{item.image}']"]
+          expect(page).to have_css('img', text: item.image)
         end
       end
     end

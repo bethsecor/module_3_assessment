@@ -1,1 +1,16 @@
-<h4><%= @best_buy_items.count %> Items</h4>
+
+<div class="container">
+  <h4><%= @best_buy_items.count %> Items</h4>
+  <% @best_buy_items.each do |item| %>
+  <div id="best-buy-item-<%=item.sku%>">
+    <h5><%= item.name %></h5>
+    <%= image_tag item.image, height: '100' %>
+    <ul>
+      <li>SKU: <%= item.sku %></li>
+      <li>Description: <%= item.shortDescription %></li>
+      <li>Average Customer Review: <%= item.customerReviewAverage %></li>
+      <li>Sale Price: <%= item.salePrice %></li>
+    </ul>
+  </div>
+  <% end %>
+</div>
