@@ -4,7 +4,8 @@ class BestBuyItems
   end
 
   def self.find(search_criteria)
-    service.products(search_criteria).map do |product|
+    manufacturer, attributes = search_criteria.split(" ")
+    service.products(manufacturer, attributes).map do |product|
       build_open_struct_object(product)
     end
   end
