@@ -7,9 +7,10 @@ class BestBuyService
     connection.params['format'] = 'json'
   end
 
-  def products
+  def products(manufacturer)
     # https://api.bestbuy.com/v1/products(manufacturer=canon&salePrice<1000)?format=json&show=sku,name,salePrice&apiKey=YourAPIKey'
-    parse(connection.get("products"))
+    parse(connection.get("products(manufacturer=#{manufacturer})",
+                        {show: "sku,name,customerReviewAverage,shortDescription,salePrice,image"}))
   end
 
   private
